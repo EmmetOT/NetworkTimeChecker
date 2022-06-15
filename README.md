@@ -1,9 +1,9 @@
 # NetworkTimeChecker
 This is a simple tool for getting the date and time from the internet, for use in Unity as an alternative to checking the system time. I made this because I wanted to create a time-based game mechanic which couldn't be tampered with by changing the PC's clock.
 
-I use multithreading and a callback pattern so you don't have to stall your game while waiting for the response.
-
 That said, there's pretty much no security on the web request. This just makes things marginally harder.
+
+I use multithreading and a callback pattern so you don't have to stall your game while waiting for the response.
 
 ## How to Use
 
