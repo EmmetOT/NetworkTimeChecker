@@ -32,6 +32,8 @@ public static class NetworkTimeChecker
             return false;
         }
 
+        Debug.Assert(timeout > 0f, "Timeout duration must be greater than 0!");
+
         m_connectionThread = new Thread(new ThreadStart(() => RequestTime(callback)));
         m_connectionThread.IsBackground = true;
         m_connectionThread.Start();
